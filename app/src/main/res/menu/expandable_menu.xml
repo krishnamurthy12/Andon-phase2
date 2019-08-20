@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="Home" />
+
+
+        <item
+            android:id="@+id/nav_topfailures"
+            android:icon="@drawable/ic_history_black_24dp"
+            android:title="Top Failures" />
+
+        <item
+            android:id="@+id/nav_topfailures_vs"
+            android:title="Value stream"
+            android:visible="false" />
+        <item
+            android:id="@+id/nav_topfailures_line"
+            android:title="Line"
+            android:visible="false" />
+        <item
+            android:id="@+id/nav_topfailures_machine"
+            android:title="Machine"
+            android:visible="false" />
+
+        <item
+            android:id="@+id/nav_manuals"
+            android:icon="@drawable/manual"
+            android:title="Mannuals" />
+
+       <!-- <item
+            android:id="@+id/nav_wall_hadith"
+            android:title="Hadith"
+            android:visible="false" />
+        <item
+            android:id="@+id/nav_wall_Poetry"
+            android:title="Poetry"
+            android:visible="false" />-->
+
+       <!-- <item
+            android:id="@+id/nav_request_maze"
+            android:title="Request MAZE"
+            android:icon="@drawable/contact"
+            />-->
+
+
+    </group>
+
+    <item
+        android:id="@+id/nav_com"
+        android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_contactus"
+                android:icon="@drawable/ic_call_black_24dp"
+                android:title="Contact us" />
+            <item
+                android:id="@+id/nav_report_issue"
+                android:icon="@drawable/ic_bug_report_black_24dp"
+                android:title="Report an issue" />
+        </menu>
+    </item>
+
+</menu>

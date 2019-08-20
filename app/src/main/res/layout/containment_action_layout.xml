@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="Action: "
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:textColor="@color/reddark"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+<RadioGroup
+    android:id="@+id/vR_radiogroup"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginTop="8dp"
+    android:layout_marginBottom="8dp"
+    android:weightSum="3"
+    android:layout_gravity="center">
+    <RadioButton
+        android:id="@+id/vRB_machine"
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Machine"
+        android:checked="true"
+        android:buttonTint="@color/colorPrimaryDark"/>
+    <RadioButton
+        android:id="@+id/vRB_process"
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Process"
+        android:checked="false"
+        android:buttonTint="@color/colorPrimaryDark"/>
+    <RadioButton
+        android:id="@+id/vRB_organization"
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Organization"
+        android:checked="false"
+        android:buttonTint="@color/colorPrimaryDark"/>
+
+</RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="@drawable/rectangular_edit_text">
+
+        <android.support.v7.widget.AppCompatSpinner
+            android:id="@+id/vS_action_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            style="@style/Base.Widget.AppCompat.TextView.SpinnerItem"
+            android:minHeight="36dp"
+            android:paddingRight="16dp"
+            android:paddingLeft="16dp"
+            />
+
+    </LinearLayout>
+    <EditText
+        android:id="@+id/vMLT_entered_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:minHeight="76dp"
+        android:layout_margin="8dp"
+        android:hint="Enter action here"
+        android:inputType="textMultiLine"
+        android:background="@drawable/rectangular_edit_text"
+        android:padding="8dp"
+       >
+
+
+    </EditText>
+
+    <!--<com.vvtech.andon.customs.MultiLineText
+        android:id="@+id/vMLT_entered_text"
+        android:layout_height="wrap_content"
+        android:minHeight="100dp"
+        android:layout_margin="8dp"
+        android:layout_width="match_parent"
+        android:hint="Enter action"
+        android:background="@drawable/edit_text_background"
+        android:textSize="16sp"
+        android:padding="8dp"
+        android:maxLines="4"/>-->
+
+   <!-- <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/messageBody"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif-monospace"
+            android:textColor="#000"
+            android:textSize="14sp"
+            android:textStyle="normal" />
+    </RelativeLayout>
+-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="16dp"
+        android:layout_gravity="end">
+        <TextView
+            android:id="@+id/vT_cal_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/dark_gray"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginRight="26dp"
+            android:text="Cancel"/>
+        <TextView
+            android:id="@+id/vT_cal_ok"
+            android:layout_marginLeft="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:text="Submit"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>
